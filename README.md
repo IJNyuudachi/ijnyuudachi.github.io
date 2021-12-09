@@ -1,0 +1,1 @@
+# ijnyuudachi.github.io
