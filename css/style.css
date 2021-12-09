@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+section {
+	position: relative;
+	background: #24292d;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background 0.5s;
+}
+
+section.light {
+	background: #f0f8ff;
+}
+
+section .card {
+	position: relative;
+	width: 300px;
+	height: 380px;
+	background: #323840;
+	box-shadow: 0 15px 25px rgba(0,0,0,0.025);
+	border-radius: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section.light .card {
+	background: #fff;
+}
+
+section .card .content, section .card .imgText {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+section .card .imgText .imgBx {
+	position: relative;
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+	border-radius: 50%;
+	margin-bottom: 15px;
+}
+
+section .card .imgText .imgBx img {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+section .card .imgText h3 {
+	font-weight: 500;
+	font-size: 1.4em;
+	line-height: 1.2em;
+	text-align: center;
+	color: #ff69b4;
+}
+
+section .card .imgText h3 span {
+	font-weight: 400;
+	font-size: 0.75em;
+	color: #ccc;
+}
+
+section.light .card .imgText h3 span {
+	color: #b8bfd8;
+}
+
+section .card .sci {
+	display: flex;
+	margin-top: 15px;
+}
+
+section .card .sci li {
+	list-style: none;
+}
+
+section .card .sci li a {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	background: #404852;
+	color: #ff69b4;
+	margin: 0 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	border-radius: 50%;
+	font-size: 20px;
+	transition: 0.5s;
+}
+
+section.light .card .sci li a {
+	background: #e9f5ff;
+}
+
+
+section .card .sci li a:hover {
+	color: #fff;
+}
+
+section .card .sci li a .fa {
+	position: relative;
+	z-index: 1000;
+}
+
+section .card .sci li a:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #ff69b4;
+	border-radius: 50%;
+	transform: scale(0);
+	transition: 0.5s;
+}
+
+section .card .sci li a:hover:before {
+	transform: scale(1);
+}
+
+.toggle {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background: #404852;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+section.light .toggle {
+	background: #e9f5ff;
+}
+
+.toggle:before {
+	content: '\f185';
+	font-family: fontAwesome;
+	color: #ff69b4;
+}
+
+section.light .toggle:before {
+	content: '\f186';
+	color: #ff69b4;
+}
+
+.player {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	background: #404852;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+section.light .player {
+	background: #e9f5ff;
+}
+
+.player:before {
+	content: '\f04b';
+	font-family: fontAwesome;
+	color: #ff69b4;
+}
+
+section.light .player:before {
+	content: '\f04b';
+	color: #ff69b4;
+}
+
+.player.music:before {
+	content: '\f04c';
+	font-family: fontAwesome;
+	color: #ff69b4;
+}
+
+section.light .player.music:before {
+	content: '\f04c';
+	color: #ff69b4;
+}
